@@ -3,8 +3,8 @@
 #include<stdio.h>
 int sum_of_digit(int v)
 {
-	if(v/10==0)
-	return 1;
+	if(v==0)
+	return 0;
 	else
 	return(v%10+sum_of_digit(v/10));
 }
